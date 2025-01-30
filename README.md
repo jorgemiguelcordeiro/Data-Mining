@@ -6,10 +6,11 @@ We segment customers using multiple perspectives. Examples of segmentation persp
 Ultimately, the goal is to develop a final segmentation that integrates these perspectives, enabling ABCDE to craft a comprehensive marketing strategy.
 
 Notes:
-We should have imputed numerical variables using a central tendency measure (such as mean, median, or mode) or applied KNN imputation instead of solely using the mode. Imputing with the mode assumes a normal distribution, but this can distort the data’s original distribution, introducing bias and reducing variance. However, in this case, we assumed normality, where mode and median coincide, minimizing this effect.
+ - We should have imputed numerical variables using a central tendency measure (such as mean, median, or mode) or applied KNN imputation instead of solely using the mode. Imputing with the mode assumes a normal distribution, but this can distort the data’s original distribution, introducing bias and reducing variance. However, in this case, we assumed normality, where mode and median coincide, minimizing this effect.
 
-In the outlier treatment, our goal was to retain "unusual but meaningful groups" (e.g., extreme but coherent clusters), which DBSCAN effectively handles by distinguishing true noise from dense clusters. Winsorization, on the other hand, would indiscriminately cap values, potentially altering these meaningful extreme groups.
+ - In the outlier treatment, our goal was to retain "unusual but meaningful groups" (e.g., extreme but coherent clusters), which DBSCAN effectively handles by distinguishing true noise from dense clusters. Winsorization, on the other hand, would indiscriminately cap values, potentially altering these meaningful extreme groups.
 
-Boxplot analysis revealed that median values remained unchanged and the spread (index rates) before and after outlier removal was similar, indicating that outliers were sparse and their removal had minimal impact on central tendencies.
-This aligns with DBSCAN’s strength in identifying true noise while preserving meaningful extreme points.
-Winsorization should only be used when removing rows is unacceptable, as it alters the distribution rather than filtering noise selectively.
+ - Boxplot analysis revealed that median values remained unchanged and the spread (index rates) before and after outlier removal was similar, indicating that outliers were sparse and their removal had minimal impact 
+   on central tendencies.
+   This aligns with DBSCAN’s strength in identifying true noise while preserving meaningful extreme points.
+   Winsorization should only be used when removing rows is unacceptable, as it alters the distribution rather than filtering noise selectively.
