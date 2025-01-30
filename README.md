@@ -49,4 +49,3 @@ This application enhances the accessibility of our segmentation insights, allowi
 ## **Final Thoughts**  
 By integrating **customer segmentation analysis** with an **interactive visualization tool**, we provide ABCDE with a **data-driven strategy** that is both **insightful and actionable**. The combination of **advanced clustering techniques** and a **user-friendly interface** ensures that ABCDE can **effectively target different customer segments**, optimize marketing efforts, and improve overall business performance.  
 
-🚀 **This project showcases a blend of Data Science, Machine Learning, and Interactive Application Development!** 🚀  
